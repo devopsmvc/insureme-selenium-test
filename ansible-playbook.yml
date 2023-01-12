@@ -1,0 +1,8 @@
+- name : Selenium Testing
+  hosts : all
+  become: true
+  connection : ssh
+  tasks : 
+
+  - name: Deploy Docker Container
+    command: docker run -itd -p 8083:8080 devopsmvc/insureme-selenium:1.0
