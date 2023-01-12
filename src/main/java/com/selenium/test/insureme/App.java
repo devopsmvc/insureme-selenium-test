@@ -11,8 +11,8 @@ public class App
     public static void main( String[] args ) throws InterruptedException
     {
     	
-    	System.setProperty("webdriver.chrome.driver","C:\\Users\\mahes\\Desktop\\STAR\\chromedriver.exe");
-    	//System.setProperty("webdriver.chrome.driver","/home/ubuntu/chromedriver");
+    	//System.setProperty("webdriver.chrome.driver","C:\\Users\\mahes\\Desktop\\STAR\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver","/home/ubuntu/chromedriver");
     	ChromeOptions chromeOptions = new ChromeOptions();
     	WebDriver driver = new ChromeDriver(chromeOptions);
     	System.out.println("Welcome to the Selenium Scripts");

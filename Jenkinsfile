@@ -52,8 +52,9 @@ node{
             
         }
         
-    stage('Configure and Deploy to the test-server'){
-        ansiblePlaybook become: true, credentialsId: 'ansible-pem', disableHostKeyChecking: true, installation: 'ansible', inventory: '/etc/ansible/hosts', playbook: 'ansible-playbook.yml'
+    stage('Run Selenium Test'){
+        echo ('Running Selenium Test')
+        sh 'java -jar /target/demo-test-automation-0.0.1-SNAPSHOT.jar'
     }
             
     }
