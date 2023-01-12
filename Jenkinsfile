@@ -54,7 +54,7 @@ node{
         
     stage('Run Selenium Test'){
         echo ('Running Selenium Test')
-        sh 'java -jar /target/demo-test-automation-0.0.1-SNAPSHOT.jar'
+        sh 'java -jar target/demo-test-automation-0.0.1-SNAPSHOT.jar'
     }
             
     }
